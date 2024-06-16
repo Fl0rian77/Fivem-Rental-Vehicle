@@ -28,7 +28,7 @@ CreateThread(function()
                 end
             },
             {
-                label = Cofnig.Texts.returnVehicle,
+                label = Config.Texts.returnVehicle,
                 onSelect = function()
                     ReturnRental(pedData.coords)
                 end
