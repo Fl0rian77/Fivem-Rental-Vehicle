@@ -20,7 +20,7 @@ This FiveM vehicle rental script allows players to rent vehicles for a specified
 1. **Download the Script:**
    - Clone or download the repository to your local machine.
    ```sh
-   git clone https://github.com/Fl0rian77/Fivem-Rental-Vehicle.git
+   git clone https://github.com/thiercelinflorian/Fivem-Rental-Vehicle.git
    ```
 2. **Place in Resources Folder:**
    - Move the fivem-vehicle-rental folder to your FiveM server's resources directory.
