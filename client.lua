@@ -11,7 +11,10 @@ CreateThread(function()
         while not HasModelLoaded(pedHash) do
             Wait(1)
         end
-        local ped = CreatePed(4, pedHash, pedData.coords.x, pedData.coords.y, pedData.coords.z, pedData.coords.w, false, true)
+            
+        local groundZ = GetGroundZFor_3dCoord(pedData.coords.x, pedData.coords.y, pedData.coords.z, false)
+        local ped = CreatePed(4, pedHash, pedData.coords.x, pedData.coords.y, groundZ, pedData.coords.w, false, true)
+        
         FreezeEntityPosition(ped, true)
         SetEntityInvincible(ped, true)
         SetBlockingOfNonTemporaryEvents(ped, true)
@@ -28,7 +31,7 @@ CreateThread(function()
                 end
             },
             {
-                label = Cofnig.Texts.returnVehicle,
+                label = Config.Texts.returnVehicle,
                 onSelect = function()
                     ReturnRental(pedData.coords)
                 end
